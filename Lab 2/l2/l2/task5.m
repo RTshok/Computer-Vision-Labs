@@ -1,4 +1,4 @@
-function [ ] = task5_H_butterworth_filter()
+function [ ] = task5()
 
 file = imread('Pic1.jpg');
 PQ = paddedsize(size(file));

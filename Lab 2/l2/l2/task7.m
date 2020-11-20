@@ -1,4 +1,4 @@
-function [ ] = task7_H_laplasian_filter()
+function [ ] = task7()
 
 file = imread('Pic1.jpg');
 PQ = paddedsize(size(file)); 

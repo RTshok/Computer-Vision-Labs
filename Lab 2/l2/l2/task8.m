@@ -1,4 +1,4 @@
-function [ ] = task8_freq_prost_filter()
+function [ ] = task8()
 
 file = imread('Pic2.jpg');
 file = imnoise(file, 'salt & pepper');
