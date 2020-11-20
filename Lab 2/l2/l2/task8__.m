@@ -1,4 +1,4 @@
-function [ ] = task8()
+function [ ] = task8__()
 
 file = imread('Pic2.jpg');
 file = imnoise(file, 'salt & pepper');

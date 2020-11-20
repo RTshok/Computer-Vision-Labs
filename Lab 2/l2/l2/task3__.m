@@ -1,12 +1,11 @@
-function [ ] = task5()
+function [ ] = task3__()
 
 file = imread('Pic1.jpg');
-PQ = paddedsize(size(file));
 file = imnoise(file, 'salt & pepper');
+PQ = paddedsize(size(file)); 
 F = fft2(file, PQ(1), PQ(2));
 D = 100;
-n = 1;
-H = hp_filter('btw', PQ(1), PQ(2), D, n);
+H = lp_filter('gaussian', PQ(1), PQ(2), D);
 G = H .* F; 
 g = real(ifft2(G)); 
 g = g(1:size(file, 1), 1:size(file, 2)); 
